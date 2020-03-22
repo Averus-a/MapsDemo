@@ -18,6 +18,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Mapsui" Version="2.0.0-beta.38" />
+    <PackageReference Include="MaterialIcons" Version="1.0.3" />
     <PackageReference Include="OsmSharp" Version="7.0.0-pre009" />
   </ItemGroup>
 

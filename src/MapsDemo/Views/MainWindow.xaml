@@ -5,6 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mapsui="clr-namespace:Mapsui.UI.Wpf;assembly=Mapsui.UI.Wpf"
         xmlns:catel="http://schemas.catelproject.com"
+        xmlns:material="clr-namespace:MaterialIcons;assembly=MaterialIcons"
         xmlns:local="clr-namespace:MapsDemo"
         mc:Ignorable="d"
         Title="Map demo">
@@ -15,10 +16,22 @@
         </Grid.ColumnDefinitions>
         <Border BorderThickness="10" Background="LightGray"
                 Width="1200">
-            <mapsui:MapControl Name="MainMap"
+            <Grid>
+                <mapsui:MapControl Name="MainMap"
                                Margin="4"
                                Width="Auto"
-                               Height="Auto"/>
+                               Height="Auto"
+                               HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                <Border BorderBrush="White" Opacity="0.65" Background="White" 
+                        BorderThickness="6"
+                        VerticalAlignment="Top" HorizontalAlignment="Right" 
+                        MinWidth="140" MinHeight="30">
+                    <StackPanel Orientation="Horizontal">
+                        <material:MaterialIcon Icon="ic_autorenew" Height="20" Width="20" Margin="0 0 10 0"/>
+                        <Slider x:Name="RotationSlider" MinWidth="140" ValueChanged="OnRotationSliderValueChanged" />
+                    </StackPanel>
+                </Border>
+            </Grid>
         </Border>
         <Label Content="Example Map"
                Width="400"

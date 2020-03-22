@@ -84,5 +84,12 @@
         {
             _updateTimer.Stop();
         }
+
+        private void OnRotationSliderValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            var percent = RotationSlider.Value / (RotationSlider.Maximum - RotationSlider.Minimum);
+            MainMap.Navigator.RotateTo(percent * 360);
+            MainMap.Refresh();
+        }
     }
 }
