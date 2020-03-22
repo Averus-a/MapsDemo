@@ -11,7 +11,12 @@
 
   <ItemGroup>
     <PackageReference Include="Catel.Core" Version="5.12.4-beta0008" />
+    <PackageReference Include="Catel.Fody" Version="4.4.0-alpha0078" />
     <PackageReference Include="Catel.MVVM" Version="5.12.4-beta0008" />
+    <PackageReference Include="Fody" Version="6.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Mapsui" Version="2.0.0-beta.38" />
     <PackageReference Include="OsmSharp" Version="7.0.0-pre009" />
   </ItemGroup>
