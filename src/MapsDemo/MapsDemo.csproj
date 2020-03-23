@@ -22,4 +22,33 @@
     <PackageReference Include="OsmSharp" Version="7.0.0-pre009" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Reference Include="System.Web" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Update="GeoData\World\countries.dbf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="GeoData\World\countries.prj">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="GeoData\World\countries.shp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="GeoData\World\countries.shp.sidx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="GeoData\World\countries.shx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="CustomRenderer\" />
+  </ItemGroup>
+
 </Project>
